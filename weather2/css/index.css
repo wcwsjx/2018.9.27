@@ -1,0 +1,491 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+body{
+	position: relative;
+	background: #f4f4f4;
+}
+/*搜索页*/
+.search{
+	position: absolute;
+	width: 7.5rem;
+	height: 0;
+	background: #fff;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	overflow: hidden;
+	transition: all 1s;
+}
+.search .ct-search{
+	width: 100%;
+	height: .9rem;
+	padding: .14rem 0;
+	position: relative;
+	border-bottom: 1px solid #eee;
+}
+.search .ct-search .btn-cancel{
+	float: right;
+	font-size: .14rem;
+    color: #434343;
+    width: 1.2rem;
+    line-height: .6rem;
+    text-align: center;
+}
+.search .ct-search .ct-input{
+	position: relative;
+	width: 6rem;
+	height: .6rem;
+	margin-left: .3rem;
+	border-radius: .44rem;
+	background-color: #f2f2f2;
+	padding: .3rem;
+}
+.search .ct-search .ct-input input{
+	position: absolute;
+	top:0;
+	left: 0;
+	width:80%;
+	height: .6rem;
+	border-radius: .44rem;
+	border: none;
+	outline: none;
+	background-color: #f2f2f2;
+	padding: .3rem;
+	color: #808080;
+	margin-left:.5rem ;
+}
+.search .ct-search .ct-input .sousuo{
+	position: absolute;
+	top: .18rem;
+	left: .24rem;
+	width: .46rem;
+	height: .46rem;
+	background: url(../img/sousuo.svg);
+	background-size:.28rem ;
+	background-repeat: no-repeat;
+}
+
+.ct-hot-city{
+	width:100%;
+	padding: .34rem;
+}
+.ct-hot-city p{
+	font-size: .18rem;
+    color: #434343;
+    height: .44rem;
+    line-height: .44rem;
+    margin: .2rem 0;
+    float: left;
+}
+.ct-hot-city ul{
+	width: 100%;
+	overflow: auto;
+}
+.ct-hot-city ul li{
+	width: 30%;
+	height: .64rem;
+	line-height: .64rem;
+	text-align: center;
+	border-radius: .44rem;
+	background: #F2F2F2;
+	font-size: .16rem;
+	color: #333;
+	float: left;
+	margin-right: .15rem;
+	margin-bottom: .24rem;
+}
+.lj {
+	display: block;
+	width: .24rem;
+	height: .24rem;
+	line-height: .24rem;
+	float: right;
+	margin-top: .05rem;
+}
+.hotscenic h2{
+	width: .5rem;
+	height: .5rem;
+	font-size: .18rem;
+	color: #333;
+	margin: .24rem;
+}
+.hotscenic ul li{
+	width: 30%;
+	height: .64rem;
+	line-height: .64rem;
+	text-align: center;
+	border-radius: .44rem;
+	background: #F2F2F2;
+	font-size: .16rem;
+	color: #333;
+	float: left;
+	margin-right: .15rem;
+	margin-bottom: .24rem;
+}
+/*顶部*/
+.top{
+	position: relative;
+	width: 100%;
+	height: 6.9rem;
+	background: -webkit-linear-gradient(top,#3cc0ff,#44deff);
+	border-top: 1px solid #3cc0ff;
+	display: block;
+}
+.city{
+	width: 100%;
+	height: .47rem;
+	line-height: .47rem;
+	font-size: .24rem;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: .3rem auto;
+}
+.city .citys{
+	text-align: center;
+}
+.city i{
+	font-size: .22rem;
+	float: left;
+}
+.city p{
+	margin-left: .1rem;
+	float: left;
+}
+.top .rightimg img{
+	width:.32rem;
+	height: .32rem;
+	position: absolute;
+	top: .34rem;
+	right: .34rem;
+}
+.kongqi{
+	width: 1.06rem;
+	height: .64rem;
+	background: #f1ab62;
+	border-radius: .1rem;
+    margin-left: .34rem;
+}
+.kongqi p{
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	font-size: .16rem;
+}
+.tem{
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin-top: .25rem;
+	color: #fff;
+}
+.tem .p1{
+	position: relative;
+	width: 100%;
+	height: .76rem;
+	color: #fff;
+	font-size: .76rem;
+	text-align: center;
+}
+.tem .p2{
+   width: 100%;
+   height:.34rem;
+   font-size: .34rem;
+   margin-top: .25rem;
+}
+.tem .p3{
+	width: 100%;
+	height: .18rem;
+	font-size: .18rem;
+	margin-top: .22rem;
+	text-align: center;
+}
+.tem .p4{
+	width: 100%;
+	height: .24rem;
+	font-size: .24rem;
+	margin-top: .75rem;
+}
+.top .screen{
+	width: 100%;
+	height: 1.8rem;
+}
+.top .screen>img{
+	width: 100%;
+	height: 100%;
+	margin-top:.38rem;
+}
+/*第二部分  最近两天的天气*/
+.today{
+	width: 100%;
+	height: 1.47rem;
+	background: #fff;
+	border-bottom:1px solid #e4e4e4;
+}
+.today .left{
+	width: 50%;
+	height: 100%;
+	float: left;
+	position: relative;	
+}
+.today .left:after{
+	position: absolute;
+	top: .35rem;
+	right: 0;
+	display: block;
+	content: "";
+	width: .02rem;
+	height: .8rem;
+	background: #e4e4e4;
+}
+.today .left .wh{
+	width: 50%;
+	height: 100%;
+	line-height: .8rem;
+	color: #4e4e4e;
+	font-size: .2rem;
+	font-weight: 1000;
+	text-align: center;
+	float: left;
+}
+.today .left .wh p{
+	/*width: 100%;*/
+	height: 30%;
+	line-height: .4rem;
+	margin-top:.18rem ;
+}
+.today .left .tp{
+	width: 50%;
+	height: 100%;
+	line-height: .8rem;
+	color: #4e4e4e;
+	font-size: .2rem;
+	font-weight: 1000;
+	text-align: center;
+	float: left;
+}
+.today .left .tp p{
+	height: 30%;
+	line-height: .4rem;
+	margin-top:.18rem ;		
+}
+.today .left .tp .sun img{
+	width: .46rem;
+	height: .46rem;
+	border-radius: 50%;
+	margin-left: .5rem;
+}
+
+.today .right{
+	width: 50%;
+	height: 100%;
+	float: left;
+	line-height: .8rem;
+	color: #4e4e4e;
+	font-size: .2rem;
+	font-weight: 1000;
+	text-align: center;
+}
+.today .right .wh{
+	width: 50%;
+	height: 100%;
+	line-height: .8rem;
+	color: #4e4e4e;
+	font-size: .2rem;
+	font-weight: 1000;
+	text-align: center;
+	float: left;
+}
+.today .right .wh p{
+	height: 30%;
+	line-height: .4rem;
+	margin-top:.18rem ;
+}
+.today .right .tp{
+	width: 50%;
+	height: 100%;
+	line-height: .8rem;
+	color: #4e4e4e;
+	font-size: .2rem;
+	font-weight: 1000;
+	text-align: center;
+	float: left;
+}
+.today .right .tp p{
+	width: 100%;
+	height: 50%;
+}
+.today .right .tp .sun img{
+	width: .46rem;
+	height: .46rem;
+	border-radius: 50%;
+	margin-left: .5rem;
+}
+/*第三部分   每一时刻的天气*/
+.weather{
+	width: 7.5rem;
+	height: 2rem;
+	background: #fff;
+	border-top:2px solid #e4e4e4;
+	border-bottom:1px solid #e4e4e4;
+	margin-top: .15rem;
+	white-space: nowrap;
+	overflow: hidden;
+	overflow-x: scroll;
+	
+}
+.weather::-webkit-scrollbar{
+	width:0;
+}
+.weather ul{
+	width: 470%;
+	height: 100%;
+}
+.weather ul li{
+	width: 1.35rem;
+	height: 1.46rem;
+	float: left;
+	text-align: center;
+	margin-top: .22rem;
+}
+.weather ul li p{
+	width: 100%;
+	height: .5rem;
+	text-align: center;
+	line-height: .5rem;
+	font-size:.14rem ;
+	color: #999;
+}
+.weather  ul li p:last-child{
+	color: #333;
+}
+.weather  ul li .sun img{
+	width: .46rem;
+	height: .46rem;
+}
+/*第四部分   温差变化*/
+.futher{
+	width: 100%;
+	/*height: 5.62rem;*/
+	border-top: 2px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+	background: #fff;
+	margin-top: .15rem;
+	overflow: hidden;
+	overflow-x: scroll;
+	white-space: nowrap;
+}
+.futher::-webkit-scrollbar{
+	width:0;
+}
+.futher ul{
+	width: 278%;
+	height: 5.8rem;
+	white-space: nowrap;
+	/*display: flex;
+	justify-content: space-between;*/
+	
+}
+.futher ul li{
+ width: 1.3rem;
+ height:5.8rem;
+ /*background: red;*/
+ margin-top: .44rem;
+ float: left;
+ /*margin-left:.24rem;*/
+}
+.futher ul li p{
+	width: 100%;
+	height: .46rem;
+	line-height: .46rem;
+	text-align: center;
+}
+.futher ul li .one{
+	font-size:.18rem ;
+	color: #b7b7b7;
+}
+.futher ul li .two{
+	font-size:.14rem;
+	color: #b7b7b7;
+}
+.futher li .three{
+	font-size:.2rem;
+	color: #333333;
+}
+.futher ul li .four img{
+	width: .46rem;
+	height: .46rem;
+}
+.futher ul li .four{
+	line-height: .12rem;
+	margin-top: .6rem;
+}
+
+/*第五部分  温馨提示*/
+.living-scroll{
+	width: 100%;
+	border-top: 1px solid #e4e4e4;
+	
+	margin-top: .15rem;
+	overflow: hidden;
+	overflow-x: scroll;
+	/*white-space: normal;*/
+}
+.living-scroll::-webkit-scrollbar{
+	width:0;
+}
+.living-scroll ul{
+	width: 200%;
+	height: 3.8rem;
+	
+}
+.living-scroll ul li{
+	width: 1.87rem;
+	height:1.87rem;
+	background: #fff;
+	float: left;
+	border-left: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e6e6e6;
+}
+.living-scroll ul li:first-child{
+	border-left: 0;
+}
+.living-scroll ul li:nth-child(9){
+	border-left: 0;
+}
+.living-scroll ul li span {
+	display: block;
+	width: 100%;
+	height: .5rem;
+	line-height: .25rem;
+	text-align: center;
+	margin-top: .24rem;
+}
+
+.living-scroll ul li p{
+	display: block;
+	font-size: .18rem;
+    color: #434343;
+    line-height: .24rem;
+    height: .24rem;
+    margin-top: .22rem;
+    text-align: center;
+}
+/*底部*/
+.footer{
+	width: 100%;
+	height: .86rem;
+	text-align: center;
+	line-height: .66rem;
+	font-size: .18rem;
+	color: #b2b2b2;
+}
+

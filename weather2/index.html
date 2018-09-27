@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title>天气App首页</title>
+	    <link rel="stylesheet" href="css/index.css" />
+	    <link rel="stylesheet" type="text/css" href="http:////at.alicdn.com/t/font_853097_33414vfemxi.css"/>
+	    <script src="js/rem.js"></script>
+	    <script src="js/jquery-3.3.1.min.js"></script>
+	    
+	</head>
+	<body>
+		<!--搜索页-->
+		<div class="search">
+			<div class="ct-search">
+				<a href="#" class="btn-cancel">取消</a>
+				<div class="ct-input">
+					<div class="sousuo"></div>
+					<input type="text" placeholder="搜索地区/景点"/>
+				</div>
+				
+			</div>
+			<!--<div class="hotscenic">
+					  <ul class="province">
+					  
+					  </ul>
+					  <ul class="somecity">
+					  	
+					  </ul>
+				</div>
+				
+			</div>-->
+		</div>
+		<!--顶部-->
+		<div class="top">
+			 <div class="city">
+			 	<i class="iconfont icon-dingweiweizhi"></i> <p class="citys">太原市 </p><span></span>
+			 </div>
+			 <div class="rightimg">
+			 	<img src="img/img.png" alt="" />
+			 </div>
+			 <div class="kongqi">
+			 	<p>空气</p>
+			 	<p class="wuran">轻度污染</p>
+			 </div>
+			 <div class="tem">
+			 	<div class="p1">&nbsp;0°</div>
+			 	<p class="p2">多云</p>
+			 	<p class="p3">湿度 28%</p>
+			 	<p class="p4">天冷了，注意保暖</p>
+			 </div>
+			 <div class="screen">
+			 	<img src="img/screen.png" alt="" />
+			 </div>
+		</div>
+		<!--第二部分  最近两天的天气-->
+         <div class="today">
+			<div class="left">
+				<div class="wh">
+					<p>今天</p>
+					<p class="tq">晴转多云</p>
+				</div>
+				<div class="tp">
+					<p><span class="hightmp">2</span>/<span class="lowtmp">-11℃</span></p>
+					<p class="sun"><img src="img/0.png" alt="" /></p>
+				</div>
+			</div>
+			<div class="right">
+				<div class="wh">
+					<p>明天</p>
+					<p class="tq">晴</p>
+				</div>
+				<div class="tp">
+					<p><span class="hightmp">3</span>/<span class="lowtmp">-13℃</span></p>
+					<p class="sun"><img src="img/0.png" alt="" /></p>
+				</div>
+			</div>
+		</div>
+		<!--第三部分   每一时刻的天气-->
+        <div class="weather">
+			<ul>
+				<!--<li>
+					<p>12:00</p>
+					<p class="sun"><img src="img/0.png" alt="" /></p>
+					<p>-1°</p>
+				</li>-->
+				<!--<li>
+					<p>13:00</p>
+					<p class="sun"><img src="img/0.png" alt="" /></p>
+					<p>0°</p>
+				</li>
+				<li>
+					<p>14:00</p>
+					<p class="sun"><img src="img/0.png" alt="" /></p>
+					<p>1°</p>
+				</li>
+				<li>
+					<p>15:00</p>
+					<p class="sun"><img src="img/0.png" alt="" /></p>
+					<p>1°</p>
+				</li>
+				<li>
+					<p>16:00</p>
+					<p class="sun"><img src="img/0.png" alt="" /></p>
+					<p>1°</p>
+				</li>
+				<li>
+					<p>17:00</p>
+					<p class="sun"><img src="img/0.png" alt="" /></p>
+					<p>1°</p>
+				</li>
+				<li>
+					<p>18:00</p>
+					<p class="sun"><img src="img/0.png" alt="" /></p>
+					<p>1°</p>
+				</li>
+			    <li>
+					<p>19:00</p>
+					<p class="sun"><img src="img/0.png" alt="" /></p>
+					<p>1°</p>
+				</li>
+				<li>
+					<p>20:00</p>
+					<p class="sun"><img src="img/0.png" alt="" /></p>
+					<p>1°</p>
+				</li>
+				<li>
+					<p>21:00</p>
+					<p class="sun"><img src="img/0.png" alt="" /></p>
+					<p>1°</p>
+				</li>
+				<li>
+					<p>22:00</p>
+					<p class="sun"><img src="img/0.png" alt="" /></p>
+					<p>1°</p>
+				</li>
+			-->
+			</ul>
+				
+		</div>
+        <!--第四部分   温差变化-->
+		<div class="futher">
+			<ul>
+				
+                
+			</ul>
+		</div>
+		<!--第五部分  温馨提示-->
+		<div class="living-scroll">
+			<ul>
+			 <li>
+			 	<span><img src="img/1.svg"/></span>
+			 	<p>不带伞</p>
+			 	<p style="color: #999;font-size: .14rem;">雨伞</p>
+			 </li>
+			 <li>
+			 	<span><img src="img/2.svg"/></span>
+			 	<p>冷</p>
+			 	<p style="color: #999;font-size: .14rem;">穿衣</p>
+			 </li>
+			 <li>
+			 	<span><img src="img/8.svg"/></span>
+			 	<p>较弱</p>
+			 	<p style="color: #999;font-size: .14rem;">防晒</p>
+			 </li>
+			 <li>
+			 	<span><img src="img/5.svg"/></span>
+			 	<p>较弱</p>
+			 	<p style="color: #999;font-size: .14rem;">防晒</p>
+			 </li>
+			 <li>
+			 	<span><img src="img/11.svg"/></span>
+			 	<p>较弱</p>
+			 	<p style="color: #999;font-size: .14rem;">防晒</p>
+			 </li>
+			 <li>
+			 	<span><img src="img/13.svg"/></span>
+			 	<p>较弱</p>
+			 	<p style="color: #999;font-size: .14rem;">防晒</p>
+			 </li>
+			 <li>
+			 	<span><img src="img/14.svg"/></span>
+			 	<p>较弱</p>
+			 	<p style="color: #999;font-size: .14rem;">防晒</p>
+			 </li>
+			 <li>
+			 	<span><img src="img/15.svg"/></span>
+			 	<p>较弱</p>
+			 	<p style="color: #999;font-size: .14rem;">防晒</p>
+			 </li>
+			 <li>
+			 	<span><img src="img/7.svg"/></span>
+			 	<p>较弱</p>
+			 	<p style="color: #999;font-size: .14rem;">防晒</p>
+			 </li>
+			 <li>
+			 	<span><img src="img/6.svg"/></span>
+			 	<p>较弱</p>
+			 	<p style="color: #999;font-size: .14rem;">防晒</p>
+			 </li>
+			 <li>
+			 	<span><img src="img/9.svg"/></span>
+			 	<p>较弱</p>
+			 	<p style="color: #999;font-size: .14rem;">防晒</p>
+			 </li>
+			 <li>
+			 	<span><img src="img/7.svg"/></span>
+			 	<p>较弱</p>
+			 	<p style="color: #999;font-size: .14rem;">防晒</p>
+			 </li>
+			 <li>
+			 	<span><img src="img/7.svg"/></span>
+			 	<p>较弱</p>
+			 	<p style="color: #999;font-size: .14rem;">防晒</p>
+			 </li>
+			 <li>
+			 	<span><img src="img/7.svg"/></span>
+			 	<p>较弱</p>
+			 	<p style="color: #999;font-size: .14rem;">防晒</p>
+			 </li>
+			 <li>
+			 	<span><img src="img/9.svg"/></span>
+			 	<p>较弱</p>
+			 	<p style="color: #999;font-size: .14rem;">防晒</p>
+			 </li>
+			 <li>
+			 	<span><img src="img/6.svg"/></span>
+			 	<p>较弱</p>
+			 	<p style="color: #999;font-size: .14rem;">防晒</p>
+			 </li>	
+			</ul>
+		</div>
+		<!--底部-->
+        <div class="footer">
+			数据来源于中国电气网
+		</div>
+		
+		
+	</body>
+</html>
+<script src="js/index1.js"></script>
