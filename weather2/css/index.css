@@ -33,14 +33,15 @@ body{
 .search .ct-search .btn-cancel{
 	float: right;
 	font-size: .14rem;
-    color: #434343;
-    width: 1.2rem;
-    line-height: .6rem;
-    text-align: center;
+        color: #434343;
+       width: .6rem;
+       line-height: .6rem;
+       text-align: center;
+	margin-right:.12rem;
 }
 .search .ct-search .ct-input{
 	position: relative;
-	width: 6rem;
+	width:86%;
 	height: .6rem;
 	margin-left: .3rem;
 	border-radius: .44rem;
