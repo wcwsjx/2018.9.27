@@ -333,7 +333,7 @@ body{
 }
 /*第三部分   每一时刻的天气*/
 .weather{
-	width: 7.5rem;
+	width: 100%;
 	height: 2rem;
 	background: #fff;
 	border-top:2px solid #e4e4e4;
